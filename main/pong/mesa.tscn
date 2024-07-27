@@ -1,0 +1,100 @@
+[gd_scene load_steps=2 format=3 uid="uid://rjb8ek5kdnch"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7y1xn"]
+size = Vector2(1152, 20.5)
+
+[node name="mesa" type="Node2D"]
+
+[node name="ColorRect8" type="ColorRect" parent="."]
+show_behind_parent = true
+offset_right = 1149.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="red" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="red"]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 58.0
+offset_right = 576.0
+offset_bottom = 118.0
+
+[node name="ColorRect2" type="ColorRect" parent="red"]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 138.0
+offset_right = 576.0
+offset_bottom = 198.0
+
+[node name="ColorRect3" type="ColorRect" parent="red"]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 218.0
+offset_right = 576.0
+offset_bottom = 278.0
+
+[node name="ColorRect4" type="ColorRect" parent="red"]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 298.0
+offset_right = 576.0
+offset_bottom = 358.0
+
+[node name="ColorRect5" type="ColorRect" parent="red"]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 378.0
+offset_right = 576.0
+offset_bottom = 438.0
+
+[node name="ColorRect6" type="ColorRect" parent="red"]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 458.0
+offset_right = 576.0
+offset_bottom = 518.0
+
+[node name="ColorRect7" type="ColorRect" parent="red"]
+layout_mode = 0
+offset_left = 561.0
+offset_top = 538.0
+offset_right = 576.0
+offset_bottom = 598.0
+
+[node name="bordes" type="CanvasGroup" parent="."]
+
+[node name="BarraSuperior" type="RigidBody2D" parent="bordes"]
+gravity_scale = 0.0
+freeze = true
+
+[node name="ColorRect" type="ColorRect" parent="bordes/BarraSuperior"]
+offset_right = 1152.0
+offset_bottom = 20.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bordes/BarraSuperior"]
+position = Vector2(576, 10.25)
+shape = SubResource("RectangleShape2D_7y1xn")
+
+[node name="BarraInferior" type="RigidBody2D" parent="bordes"]
+position = Vector2(0, 628)
+collision_priority = 2.0
+gravity_scale = 0.0
+freeze = true
+
+[node name="ColorRect" type="ColorRect" parent="bordes/BarraInferior"]
+offset_right = 1152.0
+offset_bottom = 20.0
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bordes/BarraInferior"]
+position = Vector2(576, 10.5)
+shape = SubResource("RectangleShape2D_7y1xn")

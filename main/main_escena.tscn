@@ -1,0 +1,97 @@
+[gd_scene load_steps=3 format=3 uid="uid://dapquit3s8o8r"]
+
+[ext_resource type="Script" path="res://main/main_escena.gd" id="1_6vf7v"]
+[ext_resource type="FontFile" uid="uid://b4n8myovraxur" path="res://Fonts/Xolonium-Regular.ttf" id="2_vc7j0"]
+
+[node name="MenuPrincipal" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6vf7v")
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 25.0
+offset_right = 804.0
+offset_bottom = 103.0
+theme_override_fonts/font = ExtResource("2_vc7j0")
+theme_override_font_sizes/font_size = 64
+text = "SELECCIONA"
+
+[node name="CajaBotonesIzq" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 100.0
+offset_right = 550.0
+offset_bottom = -48.0
+grow_vertical = 2
+alignment = 1
+
+[node name="Pong" type="Button" parent="CajaBotonesIzq"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_vc7j0")
+theme_override_font_sizes/font_size = 64
+text = "PONG"
+
+[node name="Snake" type="Button" parent="CajaBotonesIzq"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_vc7j0")
+theme_override_font_sizes/font_size = 64
+text = "SNAKE"
+
+[node name="TikTakToe" type="Button" parent="CajaBotonesIzq"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_vc7j0")
+theme_override_font_sizes/font_size = 64
+text = "TIK-TAK-TOE"
+
+[node name="CajaBotonesDer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -552.0
+offset_top = 100.0
+offset_right = -52.0
+offset_bottom = -48.0
+grow_horizontal = 0
+grow_vertical = 2
+alignment = 1
+
+[node name="Frogger" type="Button" parent="CajaBotonesDer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_vc7j0")
+theme_override_font_sizes/font_size = 64
+text = "FROGGER"
+
+[node name="Arkanoid" type="Button" parent="CajaBotonesDer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_vc7j0")
+theme_override_font_sizes/font_size = 64
+text = "ARKANOID"
+
+[node name="Salir" type="Button" parent="CajaBotonesDer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_vc7j0")
+theme_override_font_sizes/font_size = 64
+text = "SALIR"
+
+[connection signal="pressed" from="CajaBotonesIzq/Pong" to="." method="_on_pong_pressed"]
+[connection signal="pressed" from="CajaBotonesIzq/Snake" to="." method="_on_snake_pressed"]
+[connection signal="pressed" from="CajaBotonesIzq/TikTakToe" to="." method="_on_tik_tak_toe_pressed"]
+[connection signal="pressed" from="CajaBotonesDer/Frogger" to="." method="_on_frogger_pressed"]
+[connection signal="pressed" from="CajaBotonesDer/Arkanoid" to="." method="_on_arkanoid_pressed"]
+[connection signal="pressed" from="CajaBotonesDer/Salir" to="." method="_on_salir_pressed"]
