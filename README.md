@@ -8,7 +8,7 @@ El objetivo de este proyecto es proporcionar una plataforma educativa para apren
 ### 1. 🏓 Pong
 El clásico juego de tenis de mesa. Controla tu paleta para devolver la pelota y gana puntos al hacer que tu oponente falle.
 
-![Pong Screenshot](ruta/a/la/imagen/pong.png)
+![Pong Screenshot](ScreenShots/SS_Pong.png)
 
 ### 2. 🧱 Arkanoid (Próximamente)
 Destruye ladrillos con una pelota y una paleta. ¡Asegúrate de que la pelota no caiga fuera de la pantalla!
@@ -51,7 +51,7 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
 ## Capturas de Pantalla
 
-![Pong Screenshot](ruta/a/la/imagen/pong.png)
+![Pong Screenshot](ScreenShots/SS_Pong.png)
 
 ---
 
@@ -71,7 +71,7 @@ The aim of this project is to provide an educational platform for learning and p
 ### 1. 🏓 Pong
 The classic table tennis game. Control your paddle to return the ball and score points by making your opponent miss.
 
-![Pong Screenshot](path/to/image/pong.png)
+![Pong Screenshot](ScreenShots/SS_Pong.png)
 
 ### 2. 🧱 Arkanoid (Coming Soon)
 Break bricks with a ball and a paddle. Make sure the ball doesn't fall off the screen!
@@ -114,7 +114,7 @@ If you would like to contribute to this project, please follow these steps:
 
 ## Screenshots
 
-![Pong Screenshot](path/to/image/pong.png)
+![Pong Screenshot](ScreenShots/SS_Pong.png)
 
 ---
 
