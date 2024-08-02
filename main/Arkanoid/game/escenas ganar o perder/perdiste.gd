@@ -10,10 +10,9 @@ func _ready():
 func _process(delta):
 	pass
 
+func _on_jugar_pressed():
+	get_tree().change_scene_to_file("res://main/Arkanoid/arkanoid_game.tscn")
+
 
 func _on_salir_pressed():
 	get_tree().change_scene_to_file("res://main/main_escena.tscn")
-
-
-func _on_jugar_pressed():
-	get_tree().change_scene_to_file("res://main/Arkanoid/arkanoid_game.tscn")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dfvx3cyfy0jrb"]
+
+[ext_resource type="Texture2D" uid="uid://cmbock7t82fyv" path="res://main/Arkanoid/arte/pngs/green_brick.png" id="1_edq6o"]
+[ext_resource type="Script" path="res://main/Arkanoid/game/ladrillos_escenas/green.gd" id="1_n2m1b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vvhvy"]
+size = Vector2(56, 38)
+
+[node name="green" type="StaticBody2D"]
+position = Vector2(64, 32)
+script = ExtResource("1_n2m1b")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_edq6o")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vvhvy")

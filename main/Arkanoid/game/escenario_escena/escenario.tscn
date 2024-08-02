@@ -1,0 +1,106 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg3cay1b52rtl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_phin6"]
+size = Vector2(737, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4vmh7"]
+size = Vector2(20, 733)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vstwa"]
+size = Vector2(20, 626)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2rohg"]
+size = Vector2(20, 626)
+
+[node name="escenario" type="CanvasGroup"]
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Centro" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 202.0
+offset_right = 949.0
+offset_bottom = 648.0
+color = Color(0.141176, 0.109804, 1, 1)
+
+[node name="Borde_Izquierda" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_right = 202.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="Borde_Derecha" type="ColorRect" parent="Control"]
+layout_mode = 0
+offset_left = 950.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="limite_sup" type="StaticBody2D" parent="."]
+position = Vector2(202, 20)
+
+[node name="ColorRect" type="ColorRect" parent="limite_sup"]
+offset_right = 20.0
+offset_bottom = 748.0
+rotation = 4.71239
+color = Color(0.716225, 0, 0.114642, 1)
+
+[node name="superior" type="CollisionShape2D" parent="limite_sup"]
+position = Vector2(374.5, -10)
+shape = SubResource("RectangleShape2D_phin6")
+
+[node name="limite_inf" type="Area2D" parent="."]
+position = Vector2(576, 659)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="limite_inf"]
+position = Vector2(-0.000244141, 5.5)
+shape = SubResource("RectangleShape2D_4vmh7")
+
+[node name="limite_der" type="StaticBody2D" parent="."]
+position = Vector2(960, 324)
+
+[node name="ColorRect" type="ColorRect" parent="limite_der"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -324.0
+offset_right = 10.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.267447, 0.237789, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="limite_der"]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_vstwa")
+
+[node name="limite_izq" type="StaticBody2D" parent="."]
+position = Vector2(192, 324)
+
+[node name="ColorRect" type="ColorRect" parent="limite_izq"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -324.0
+offset_right = 10.0
+offset_bottom = 324.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.267447, 0.237789, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="limite_izq"]
+position = Vector2(0, 10)
+shape = SubResource("RectangleShape2D_2rohg")

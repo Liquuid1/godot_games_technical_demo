@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdi8xuod3n261"]
+
+[ext_resource type="Script" path="res://main/Arkanoid/game/bricks_escena/bricks.gd" id="1_bt4tj"]
+
+[node name="bricks" type="CanvasGroup"]
+position = Vector2(240, 50)
+script = ExtResource("1_bt4tj")

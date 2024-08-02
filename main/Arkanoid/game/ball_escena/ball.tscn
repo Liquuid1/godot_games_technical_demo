@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://dpn5ayiwwopj"]
+
+[ext_resource type="Script" path="res://main/Arkanoid/game/ball_escena/ball.gd" id="1_5dpup"]
+[ext_resource type="Texture2D" uid="uid://cp7e7qr5wnwb4" path="res://main/Arkanoid/arte/pngs/pelota_arkanoid.png" id="1_dsgya"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kkaf7"]
+radius = 19.2308
+height = 55.3846
+
+[node name="ball" type="CharacterBody2D"]
+scale = Vector2(1.3, 1.3)
+script = ExtResource("1_5dpup")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_kkaf7")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_dsgya")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="aux" type="CollisionShape2D" parent="Area2D"]
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_kkaf7")

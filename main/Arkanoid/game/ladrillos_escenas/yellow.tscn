@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://0hrmaouu4crm"]
+
+[ext_resource type="Script" path="res://main/Arkanoid/game/ladrillos_escenas/yellow.gd" id="1_b6102"]
+[ext_resource type="Texture2D" uid="uid://e5g1vgnydhcl" path="res://main/Arkanoid/arte/pngs/yellow_brick.png" id="1_fcgrj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vvhvy"]
+size = Vector2(56, 38)
+
+[node name="yellow" type="StaticBody2D"]
+position = Vector2(64, 32)
+script = ExtResource("1_b6102")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_fcgrj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vvhvy")

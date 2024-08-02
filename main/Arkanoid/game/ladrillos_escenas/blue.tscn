@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://dk5cb2flnugmh"]
+
+[ext_resource type="Script" path="res://main/Arkanoid/game/ladrillos_escenas/blue.gd" id="1_pj042"]
+[ext_resource type="Texture2D" uid="uid://clbf4ii5yovfn" path="res://main/Arkanoid/arte/pngs/blue_brick.png" id="1_tsiqe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vvhvy"]
+size = Vector2(56, 38)
+
+[node name="blue" type="StaticBody2D"]
+position = Vector2(64, 32)
+script = ExtResource("1_pj042")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tsiqe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vvhvy")

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b01af56g32oa4"]
+
+[ext_resource type="Texture2D" uid="uid://c24jb3bq66f7l" path="res://main/Arkanoid/arte/pngs/pink_brick.png" id="1_a065g"]
+[ext_resource type="Script" path="res://main/Arkanoid/game/ladrillos_escenas/pink.gd" id="1_je650"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vvhvy"]
+size = Vector2(56, 38)
+
+[node name="pink" type="StaticBody2D"]
+position = Vector2(64, 32)
+script = ExtResource("1_je650")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_a065g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_vvhvy")

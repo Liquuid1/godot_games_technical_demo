@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2y4jaxwrugew"]
+
+[ext_resource type="FontFile" uid="uid://b4n8myovraxur" path="res://Fonts/Xolonium-Regular.ttf" id="1_6cxu1"]
+[ext_resource type="Script" path="res://main/Arkanoid/game/escenas ganar o perder/perdiste.gd" id="1_tydtf"]
+
+[node name="perdiste" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+scale = Vector2(0.8, 0.8)
+script = ExtResource("1_tydtf")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -395.5
+offset_top = 150.0
+offset_right = 395.5
+offset_bottom = 309.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.945098, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0.803922, 1)
+theme_override_fonts/font = ExtResource("1_6cxu1")
+theme_override_font_sizes/font_size = 64
+text = "PERDISTE!!! ¿QUIERES 
+OTRO INTENTO?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -67.0
+offset_top = 350.0
+offset_right = 67.0
+offset_bottom = 397.0
+grow_horizontal = 2
+
+[node name="jugar" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.882353, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_6cxu1")
+theme_override_font_sizes/font_size = 32
+text = "JUGAR"
+
+[node name="salir" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.882353, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_6cxu1")
+theme_override_font_sizes/font_size = 32
+text = "SALIR
+"
+
+[connection signal="pressed" from="VBoxContainer/jugar" to="." method="_on_jugar_pressed"]
+[connection signal="pressed" from="VBoxContainer/salir" to="." method="_on_salir_pressed"]

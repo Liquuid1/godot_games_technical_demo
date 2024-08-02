@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c84dk1yf7bxhk"]
+
+[ext_resource type="PackedScene" uid="uid://dg3cay1b52rtl" path="res://main/Arkanoid/game/escenario_escena/escenario.tscn" id="1_lbw6p"]
+[ext_resource type="Script" path="res://main/Arkanoid/arkanoid_game.gd" id="1_vo5sk"]
+[ext_resource type="PackedScene" uid="uid://cyvi5lxine81" path="res://main/Arkanoid/game/player_escena/control.tscn" id="2_vdvt5"]
+[ext_resource type="PackedScene" uid="uid://bdi8xuod3n261" path="res://main/Arkanoid/game/bricks_escena/bricks.tscn" id="3_8arlk"]
+
+[node name="Arkanoid_game" type="Node2D"]
+script = ExtResource("1_vo5sk")
+
+[node name="escenario" parent="." instance=ExtResource("1_lbw6p")]
+
+[node name="control" parent="." instance=ExtResource("2_vdvt5")]
+position = Vector2(576, 498)
+
+[node name="bricks" parent="." instance=ExtResource("3_8arlk")]
+
+[connection signal="hit" from="control" to="." method="_on_control_hit"]
+[connection signal="powerup" from="bricks" to="." method="_on_bricks_powerup"]
