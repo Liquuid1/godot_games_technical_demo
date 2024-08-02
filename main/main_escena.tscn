@@ -68,12 +68,13 @@ grow_horizontal = 0
 grow_vertical = 2
 alignment = 1
 
-[node name="Frogger" type="Button" parent="CajaBotonesDer"]
+[node name="Solitario" type="Button" parent="CajaBotonesDer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_fonts/font = ExtResource("2_vc7j0")
 theme_override_font_sizes/font_size = 64
-text = "FROGGER"
+text = "SOLITARIO
+CHINO"
 
 [node name="Arkanoid" type="Button" parent="CajaBotonesDer"]
 layout_mode = 2
@@ -92,6 +93,6 @@ text = "SALIR"
 [connection signal="pressed" from="CajaBotonesIzq/Pong" to="." method="_on_pong_pressed"]
 [connection signal="pressed" from="CajaBotonesIzq/Snake" to="." method="_on_snake_pressed"]
 [connection signal="pressed" from="CajaBotonesIzq/TikTakToe" to="." method="_on_tik_tak_toe_pressed"]
-[connection signal="pressed" from="CajaBotonesDer/Frogger" to="." method="_on_frogger_pressed"]
+[connection signal="pressed" from="CajaBotonesDer/Solitario" to="." method="_on_frogger_pressed"]
 [connection signal="pressed" from="CajaBotonesDer/Arkanoid" to="." method="_on_arkanoid_pressed"]
 [connection signal="pressed" from="CajaBotonesDer/Salir" to="." method="_on_salir_pressed"]

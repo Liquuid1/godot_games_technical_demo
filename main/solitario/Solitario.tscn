@@ -1,16 +1,16 @@
 [gd_scene load_steps=3 format=3 uid="uid://bb5airuef5ynh"]
 
-[ext_resource type="Script" path="res://main/Frogger/frogger.gd" id="1_8kxbb"]
-[ext_resource type="FontFile" uid="uid://b4n8myovraxur" path="res://Fonts/Xolonium-Regular.ttf" id="2_cab7d"]
+[ext_resource type="Script" path="res://main/Solitario/Solitario.gd" id="1_nwlc3"]
+[ext_resource type="FontFile" uid="uid://b4n8myovraxur" path="res://Fonts/Xolonium-Regular.ttf" id="2_y1hut"]
 
-[node name="frogger" type="Control"]
+[node name="Solitario" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_8kxbb")
+script = ExtResource("1_nwlc3")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
@@ -22,13 +22,13 @@ alignment = 1
 
 [node name="Jugar" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_cab7d")
+theme_override_fonts/font = ExtResource("2_y1hut")
 theme_override_font_sizes/font_size = 64
 text = "PLAY"
 
 [node name="Salir" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_fonts/font = ExtResource("2_cab7d")
+theme_override_fonts/font = ExtResource("2_y1hut")
 theme_override_font_sizes/font_size = 64
 text = "SALIR"
 
@@ -38,8 +38,10 @@ offset_left = 404.0
 offset_top = 50.0
 offset_right = 748.0
 offset_bottom = 128.0
-theme_override_fonts/font = ExtResource("2_cab7d")
+theme_override_fonts/font = ExtResource("2_y1hut")
 theme_override_font_sizes/font_size = 64
-text = "FROGGER"
+text = "SOLITARIO
+CHINO"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
