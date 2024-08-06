@@ -1,7 +1,6 @@
 # 🎮 Popurrí de Juegos en Godot 🎮
 
-¡Bienvenidos al proyecto de Popurrí de Juegos en Godot! Este repositorio contiene una colección de juegos clásicos desarrollados con el motor de videojuegos Godot. 
-El objetivo de este proyecto es proporcionar una plataforma educativa para aprender y practicar el desarrollo de videojuegos.
+¡Bienvenidos al proyecto de Popurrí de Juegos en Godot! Este repositorio contiene una colección de juegos clásicos desarrollados con el motor de videojuegos Godot. El objetivo de este proyecto es proporcionar una plataforma educativa para aprender y practicar el desarrollo de videojuegos.
 
 ## Juegos Incluidos
 
@@ -10,23 +9,25 @@ El clásico juego de tenis de mesa. Controla tu paleta para devolver la pelota y
 
 ![Pong Screenshot](ScreenShots/SS_Pong.png)
 
-### 2. 🧱 Arkanoid (Próximamente)
+### 2. 🧱 Arkanoid
 Destruye ladrillos con una pelota y una paleta. ¡Asegúrate de que la pelota no caiga fuera de la pantalla!
+
+![Arkanoid Screenshot](ScreenShots/SS_Arkanoid.png)
 
 ### 3. ❌🟢 TikTakToe (Próximamente)
 El tradicional juego de tres en raya. ¡Sé el primero en alinear tres de tus símbolos en una fila!
 
-### 4. 🐸 Frogger (Próximamente)
-Ayuda a la rana a cruzar la carretera y el río sin ser atropellada o caer al agua.
+### 4. 🀄 Solitario Chino (Próximamente)
+Un juego de rompecabezas estratégico donde debes eliminar todos los clavitos del tablero saltando sobre ellos con otros clavitos.
 
 ### 5. 🐍 Snake (Próximamente)
 Guía a la serpiente para que coma y crezca. Evita chocar contra las paredes y contra ti mismo.
 
 ## Orden de Desarrollo
 1. Pong (¡Desarrollado!)
-2. Arkanoid (En desarrollo)
+2. Arkanoid (¡Desarrollado!)
 3. TikTakToe (Próximamente)
-4. Frogger (Próximamente)
+4. Solitario Chino (Próximamente)
 5. Snake (Próximamente)
 
 ## Objetivo del Proyecto
@@ -42,7 +43,7 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 5. Abre un Pull Request.
 
 ## Requisitos del Sistema
-- Godot Engine 4
+- Godot Engine 3.5 o superior
 - Sistema operativo: Windows, macOS, Linux
 
 ## Instalación
@@ -52,19 +53,18 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 ## Capturas de Pantalla
 
 ![Pong Screenshot](ScreenShots/SS_Pong.png)
+![Arkanoid Screenshot](ScreenShots/SS_Arkanoid.png)
 
 ---
 
 ¡Esperamos que disfrutes aprendiendo y desarrollando con este proyecto! Si tienes alguna pregunta o sugerencia, no dudes en abrir un issue.
 
 ¡Feliz desarrollo! 🎮
-
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 🎮 Godot Games Medley 🎮
 
-Welcome to the Godot Games Medley project! This repository contains a collection of classic games developed with the Godot game engine. 
-The aim of this project is to provide an educational platform for learning and practicing game development.
+Welcome to the Godot Games Medley project! This repository contains a collection of classic games developed with the Godot game engine. The aim of this project is to provide an educational platform for learning and practicing game development.
 
 ## Included Games
 
@@ -73,23 +73,25 @@ The classic table tennis game. Control your paddle to return the ball and score 
 
 ![Pong Screenshot](ScreenShots/SS_Pong.png)
 
-### 2. 🧱 Arkanoid (Coming Soon)
+### 2. 🧱 Arkanoid
 Break bricks with a ball and a paddle. Make sure the ball doesn't fall off the screen!
+
+![Arkanoid Screenshot](ScreenShots/SS_Arkanoid.png)
 
 ### 3. ❌🟢 TikTakToe (Coming Soon)
 The traditional tic-tac-toe game. Be the first to align three of your symbols in a row!
 
-### 4. 🐸 Frogger (Coming Soon)
-Help the frog cross the road and the river without getting hit by cars or falling into the water.
+### 4. 🀄 Chinese Solitaire (Coming Soon)
+A strategic puzzle game where you aim to remove all the pegs from the board by jumping over them with other pegs.
 
 ### 5. 🐍 Snake (Coming Soon)
 Guide the snake to eat and grow. Avoid crashing into the walls or yourself.
 
 ## Development Order
 1. Pong (Developed!)
-2. Arkanoid (In development)
+2. Arkanoid (Developed!)
 3. TikTakToe (Coming soon)
-4. Frogger (Coming soon)
+4. Chinese Solitaire (Coming soon)
 5. Snake (Coming soon)
 
 ## Project Objective
@@ -115,6 +117,7 @@ If you would like to contribute to this project, please follow these steps:
 ## Screenshots
 
 ![Pong Screenshot](ScreenShots/SS_Pong.png)
+![Arkanoid Screenshot](ScreenShots/SS_Arkanoid.png)
 
 ---
 
