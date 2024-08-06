@@ -12,3 +12,7 @@ func _process(delta):
 
 func _on_salir_pressed():
 	get_tree().change_scene_to_file("res://main/main_escena.tscn")
+
+
+func _on_jugar_pressed():
+	get_tree().change_scene_to_file("res://main/TikTakToe/game/tablero/tablero.tscn")

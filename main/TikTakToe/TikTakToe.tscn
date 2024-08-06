@@ -42,4 +42,5 @@ theme_override_fonts/font = ExtResource("2_cr8sd")
 theme_override_font_sizes/font_size = 64
 text = "TIK-TAK-TOE"
 
+[connection signal="pressed" from="VBoxContainer/Jugar" to="." method="_on_jugar_pressed"]
 [connection signal="pressed" from="VBoxContainer/Salir" to="." method="_on_salir_pressed"]
