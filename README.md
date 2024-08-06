@@ -14,8 +14,10 @@ Destruye ladrillos con una pelota y una paleta. ¡Asegúrate de que la pelota no
 
 ![Arkanoid Screenshot](ScreenShots/SS_Arkanoid.png)
 
-### 3. ❌🟢 TikTakToe (Próximamente)
+### 3. ❌🟢 TikTakToe
 El tradicional juego de tres en raya. ¡Sé el primero en alinear tres de tus símbolos en una fila!
+
+![TikTakToe Screenshot](ScreenShots/SS_TikTakToe.png)
 
 ### 4. 🀄 Solitario Chino (Próximamente)
 Un juego de rompecabezas estratégico donde debes eliminar todos los clavitos del tablero saltando sobre ellos con otros clavitos.
@@ -26,7 +28,7 @@ Guía a la serpiente para que coma y crezca. Evita chocar contra las paredes y c
 ## Orden de Desarrollo
 1. Pong (¡Desarrollado!)
 2. Arkanoid (¡Desarrollado!)
-3. TikTakToe (Próximamente)
+3. TikTakToe (¡Desarrollado!)
 4. Solitario Chino (Próximamente)
 5. Snake (Próximamente)
 
@@ -43,17 +45,18 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 5. Abre un Pull Request.
 
 ## Requisitos del Sistema
-- Godot Engine 3.5 o superior
+- Godot Engine 4.0 o superior
 - Sistema operativo: Windows, macOS, Linux
 
 ## Instalación
-1. Clona este repositorio: `git clone https://github.com/tu_usuario/popurri-juegos-godot.git`
+1. Clona este repositorio: `git clone https://github.com/tu_usuario/godot_games_technical_demo`
 2. Abre Godot y carga el proyecto.
 
 ## Capturas de Pantalla
 
 ![Pong Screenshot](ScreenShots/SS_Pong.png)
 ![Arkanoid Screenshot](ScreenShots/SS_Arkanoid.png)
+![TikTakToe Screenshot](ScreenShots/SS_TikTakToe.png)
 
 ---
 
@@ -61,7 +64,6 @@ Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
 ¡Feliz desarrollo! 🎮
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 # 🎮 Godot Games Medley 🎮
 
 Welcome to the Godot Games Medley project! This repository contains a collection of classic games developed with the Godot game engine. The aim of this project is to provide an educational platform for learning and practicing game development.
@@ -78,8 +80,10 @@ Break bricks with a ball and a paddle. Make sure the ball doesn't fall off the s
 
 ![Arkanoid Screenshot](ScreenShots/SS_Arkanoid.png)
 
-### 3. ❌🟢 TikTakToe (Coming Soon)
+### 3. ❌🟢 TikTakToe
 The traditional tic-tac-toe game. Be the first to align three of your symbols in a row!
+
+![TikTakToe Screenshot](ScreenShots/SS_TikTakToe.png)
 
 ### 4. 🀄 Chinese Solitaire (Coming Soon)
 A strategic puzzle game where you aim to remove all the pegs from the board by jumping over them with other pegs.
@@ -90,7 +94,7 @@ Guide the snake to eat and grow. Avoid crashing into the walls or yourself.
 ## Development Order
 1. Pong (Developed!)
 2. Arkanoid (Developed!)
-3. TikTakToe (Coming soon)
+3. TikTakToe (Developed!)
 4. Chinese Solitaire (Coming soon)
 5. Snake (Coming soon)
 
@@ -107,19 +111,18 @@ If you would like to contribute to this project, please follow these steps:
 5. Open a Pull Request.
 
 ## System Requirements
-- Godot Engine 3.5 or higher
+- Godot Engine 4.0 or higher
 - Operating System: Windows, macOS, Linux
 
 ## Installation
-1. Clone this repository: `git clone https://github.com/your_username/godot-games-medley.git`
+1. Clone this repository: `git clone https://github.com/your_username/godot_games_technical_demo`
 2. Open Godot and load the project.
 
 ## Screenshots
 
 ![Pong Screenshot](ScreenShots/SS_Pong.png)
 ![Arkanoid Screenshot](ScreenShots/SS_Arkanoid.png)
-
----
+![TikTakToe Screenshot](ScreenShots/SS_TikTakToe.png)
 
 We hope you enjoy learning and developing with this project! If you have any questions or suggestions, feel free to open an issue.
 
